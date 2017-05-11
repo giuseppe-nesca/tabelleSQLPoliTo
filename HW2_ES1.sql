@@ -21,7 +21,7 @@ CREATE TABLE COURSE_SCHEDULE (
   Room       CHAR(5)  NOT NULL,
   PRIMARY KEY (CourseCode, DayOfWeek, StartTime),
   FOREIGN KEY (CourseCode) REFERENCES COURSE (CourseCode)
-
+  ON DELETE CASCADE
 );
 
 /*
